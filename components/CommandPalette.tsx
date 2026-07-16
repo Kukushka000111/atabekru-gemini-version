@@ -78,7 +78,7 @@ export default function CommandPalette() {
             </div>
 
             {/* Menu Navigation Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-3 max-w-5xl mx-auto px-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 max-w-5xl mx-auto px-2">
               {MENU_ITEMS.map((item, idx) => (
                 <motion.button
                   key={item.command}
@@ -88,7 +88,7 @@ export default function CommandPalette() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: idx * 0.05, duration: 0.4 }}
-                  className="group relative flex flex-col items-center justify-center border border-gold-500/20 bg-gold-500/[0.02] py-5 px-3 rounded-sm transition-all duration-300 hover:border-gold-500/60 hover:bg-gold-500/[0.08] hover:shadow-[0_0_20px_rgba(212,175,55,0.2)]"
+                  className={`group relative flex flex-col items-center justify-center border border-gold-500/20 bg-gold-500/[0.02] py-4 px-3 sm:py-5 rounded-sm transition-all duration-300 hover:border-gold-500/60 hover:bg-gold-500/[0.08] hover:shadow-[0_0_20px_rgba(212,175,55,0.2)] ${idx === 6 ? "col-span-2 sm:col-span-3 lg:col-span-1" : ""}`}
                 >
                   {/* Candlelight hover glow effect inside button */}
                   <div className="pointer-events-none absolute inset-0 opacity-0 bg-radial-gradient from-gold-500/10 via-transparent to-transparent group-hover:opacity-100 transition-opacity duration-300" />

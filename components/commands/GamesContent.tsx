@@ -129,6 +129,59 @@ export default function GamesContent() {
           </AnimatePresence>
         </div>
 
+        {/* On-screen controls for mobile/touch devices */}
+        <div className="mt-6 flex flex-col items-center gap-2 md:hidden">
+          <p className="font-serif text-[9px] uppercase tracking-wider text-gold-500/40 mb-1">
+            Сенсорный компас
+          </p>
+          
+          {/* Up Button */}
+          <button
+            type="button"
+            onClick={() => queueDirection("UP")}
+            className="group relative flex h-12 w-12 items-center justify-center rounded-full border border-gold-500/20 bg-gold-500/[0.02] text-gold-400 active:bg-gold-500/10 active:border-gold-500/60 active:scale-95 transition-all duration-200"
+            aria-label="Вверх"
+          >
+            <span className="text-sm font-bold">▲</span>
+          </button>
+          
+          {/* Left / Right Buttons */}
+          <div className="flex gap-10">
+            <button
+              type="button"
+              onClick={() => queueDirection("LEFT")}
+              className="group relative flex h-12 w-12 items-center justify-center rounded-full border border-gold-500/20 bg-gold-500/[0.02] text-gold-400 active:bg-gold-500/10 active:border-gold-500/60 active:scale-95 transition-all duration-200"
+              aria-label="Влево"
+            >
+              <span className="text-sm font-bold">◀</span>
+            </button>
+            
+            {/* Elegant central medallion decorative space */}
+            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold-500/10 bg-[#060608] select-none text-[10px] text-gold-500/30 font-serif italic">
+              ✦
+            </div>
+
+            <button
+              type="button"
+              onClick={() => queueDirection("RIGHT")}
+              className="group relative flex h-12 w-12 items-center justify-center rounded-full border border-gold-500/20 bg-gold-500/[0.02] text-gold-400 active:bg-gold-500/10 active:border-gold-500/60 active:scale-95 transition-all duration-200"
+              aria-label="Вправо"
+            >
+              <span className="text-sm font-bold">▶</span>
+            </button>
+          </div>
+          
+          {/* Down Button */}
+          <button
+            type="button"
+            onClick={() => queueDirection("DOWN")}
+            className="group relative flex h-12 w-12 items-center justify-center rounded-full border border-gold-500/20 bg-gold-500/[0.02] text-gold-400 active:bg-gold-500/10 active:border-gold-500/60 active:scale-95 transition-all duration-200"
+            aria-label="Вниз"
+          >
+            <span className="text-sm font-bold">▼</span>
+          </button>
+        </div>
+
         {/* Controls label */}
         <p className="mt-4 text-center font-serif text-[10px] text-gold-300/30 uppercase tracking-[0.2em]">
           ▲ ▼ ◀ ▶ — навигация нити Ариадны

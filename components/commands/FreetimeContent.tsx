@@ -63,7 +63,7 @@ export default function FreetimeContent() {
         </div>
 
         {/* Arch-shaped medieval grid */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7 max-w-5xl mx-auto pt-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 max-w-5xl mx-auto pt-4">
           {WEEK_SCHEDULE.map((day, index) => {
             const styles = MEDIEVAL_STATUS_STYLES[day.status];
             const roman = ROMAN_NUMERALS[day.id];
@@ -74,7 +74,7 @@ export default function FreetimeContent() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className={`group flex flex-col items-center justify-between rounded-t-full border border-b-2 border-b-gold-500/10 bg-[#0a0a0d] p-3 pt-6 pb-4 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 ${styles.border} ${styles.glow}`}
+                className={`group flex flex-col items-center justify-between rounded-t-full border border-b-2 border-b-gold-500/10 bg-[#0a0a0d] p-3 pt-6 pb-4 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 ${styles.border} ${styles.glow} ${index === 6 ? "col-span-2 sm:col-span-3 lg:col-span-1" : ""}`}
               >
                 {/* Roman Numeral Indicator inside circle */}
                 <div className="flex flex-col items-center space-y-1.5">
