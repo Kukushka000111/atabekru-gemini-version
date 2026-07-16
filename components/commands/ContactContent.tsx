@@ -8,16 +8,16 @@ import { GITHUB_URL, TELEGRAM_USERNAME } from "@/lib/constants";
 const CONTACTS = [
   {
     id: "telegram",
-    label: "Голубиная Почта (Telegram)",
+    label: "Связаться в Telegram",
     value: `@${TELEGRAM_USERNAME}`,
-    description: "Послать спешную депешу через гонца",
+    description: "Написать личное сообщение в мессенджере",
     action: "copy" as const,
   },
   {
     id: "github",
-    label: "Хранилище Кода (GitHub)",
+    label: "Профиль GitHub",
     value: TELEGRAM_USERNAME,
-    description: "Обозреть древние фолианты и скрипты",
+    description: "Посмотреть исходный код и репозитории проектов",
     action: "link" as const,
     href: GITHUB_URL,
   },
@@ -29,9 +29,9 @@ export default function ContactContent() {
   const handleTelegramClick = async () => {
     try {
       await navigator.clipboard.writeText(`@${TELEGRAM_USERNAME}`);
-      showToast("Имя гонца скопировано в буфер обмена!");
+      showToast("Имя пользователя скопировано в буфер обмена!");
     } catch {
-      showToast("Не удалось отправить голубя. Скопируйте вручную.");
+      showToast("Не удалось скопировать автоматически. Выделите имя пользователя вручную.");
     }
   };
 
@@ -46,10 +46,10 @@ export default function ContactContent() {
         {/* Contact Header */}
         <div className="text-center space-y-1">
           <p className="text-[9px] font-mono uppercase tracking-[0.3em] text-gold-500/50">
-            Exhibit VI • Messenger Parchments
+            Раздел VI • Обратная связь
           </p>
           <h2 className="font-serif text-xl sm:text-2xl font-bold tracking-widest text-gold-400">
-            СВЯЗЬ И ДЕПЕШИ
+            КОНТАКТЫ
           </h2>
           <div className="mx-auto h-[1px] w-20 bg-gradient-to-r from-transparent via-gold-500/35 to-transparent" />
         </div>
@@ -82,7 +82,7 @@ export default function ContactContent() {
                     </p>
                   </div>
                   <span className="shrink-0 rounded-sm border border-gold-500/30 bg-[#0c0c10] px-2.5 py-1 font-serif text-[9px] uppercase tracking-widest text-gold-400/80 transition-colors group-hover:border-gold-500 group-hover:text-gold-200">
-                    Печать
+                    Копировать
                   </span>
                 </button>
               ) : (

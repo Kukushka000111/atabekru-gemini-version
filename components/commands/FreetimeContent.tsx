@@ -23,21 +23,21 @@ const MEDIEVAL_STATUS_STYLES: Record<
     dot: "bg-red-500/80 shadow-[0_0_8px_rgba(239,68,68,0.6)]",
     glow: "hover:shadow-[0_0_20px_rgba(239,68,68,0.1)] hover:border-red-500/30",
     border: "border-red-500/10",
-    label: "Затворничество",
+    label: "Занят",
     text: "text-red-300/60",
   },
   free: {
     dot: "bg-gold-500 shadow-[0_0_8px_rgba(212,175,55,0.7)]",
     glow: "hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] hover:border-gold-500/40",
     border: "border-gold-500/15",
-    label: "Аудиенция",
+    label: "Свободен",
     text: "text-gold-300/70",
   },
   gaming: {
     dot: "bg-purple-500/80 shadow-[0_0_8px_rgba(168,85,247,0.6)]",
     glow: "hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] hover:border-purple-500/30",
     border: "border-purple-500/10",
-    label: "Крестовые Походы",
+    label: "Отдых / Игры",
     text: "text-purple-300/60",
   },
 };
@@ -54,10 +54,10 @@ export default function FreetimeContent() {
         {/* Astronomical Table Header */}
         <div className="text-center space-y-1">
           <p className="text-[9px] font-mono uppercase tracking-[0.3em] text-gold-500/50">
-            Exhibit VII • Astronomical Treatise
+            Раздел VII • Расписание
           </p>
           <h2 className="font-serif text-xl sm:text-2xl font-bold tracking-widest text-gold-400">
-            СВОБОДНОЕ ВРЕМЯ
+            КАЛЕНДАРЬ И ДОСУГ
           </h2>
           <div className="mx-auto h-[1px] w-24 bg-gradient-to-r from-transparent via-gold-500/35 to-transparent" />
         </div>

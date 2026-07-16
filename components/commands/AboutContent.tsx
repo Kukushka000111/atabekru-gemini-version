@@ -101,10 +101,10 @@ export default function AboutContent() {
         {/* Majestic Exhibit Header */}
         <motion.div variants={itemVariants} className="space-y-1.5">
           <p className="text-[9px] font-mono tracking-[0.3em] text-gold-500/50 uppercase">
-            Экспонат I • Личный пергамент
+            Раздел I • Обо мне
           </p>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-gold-400 uppercase">
-            АТАБЕК. ЭКСПОНАТ I
+            АТАБЕК
           </h2>
           <div className="mx-auto h-[1px] w-24 bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" />
         </motion.div>
@@ -114,8 +114,7 @@ export default function AboutContent() {
           variants={itemVariants}
           className="font-serif italic text-white/80 text-sm sm:text-base leading-loose max-w-md mx-auto"
         >
-          «Я Бекич. Создал этот храм цифрового созидания. 
-          Скромность — мое истинное украшение, а сотворение созвучий и чистого кода — мое вечное призвание».
+          «Привет! Я Атабек. Занимаюсь веб-разработкой, созданием музыки и кулинарным творчеством. Стремлюсь писать чистый, производительный код и создавать качественные проекты, которые звучат и работают превосходно».
         </motion.p>
 
         {/* Classic marble-inspired table details */}

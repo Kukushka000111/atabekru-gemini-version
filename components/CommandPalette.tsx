@@ -15,13 +15,13 @@ const WIDE_COMMANDS: Record<string, string> = {
 };
 
 const MENU_ITEMS = [
-  { label: "О СЕБЕ", command: "/about", description: "Экспонат I — Архитектура, стек и идеалы" },
-  { label: "МУЗЫКА", command: "/music", description: "Экспонат II — Золотые пластины и волны звука" },
-  { label: "ГИЛЬДИЯ ХЛЕБА", command: "/bakery", description: "Экспонат III — Кьяроскуро кулинарной выпечки" },
-  { label: "ИГРЫ", command: "games", commandMapped: "/games", description: "Экспонат IV — Мозаичная нить Ариадны" }, // Wait, map games to /games
-  { label: "ФОТО", command: "/lastphoto", description: "Экспонат V — Картина дня в серебряных лучах" },
-  { label: "СВЯЗЬ", command: "/contact", description: "Экспонат VI — Голубиная почта и пергаменты" },
-  { label: "ДОСУГ", command: "/freetime", description: "Экспонат VII — Старинный астрономический календарь" },
+  { label: "О СЕБЕ", command: "/about", description: "Раздел I — Стек технологий, опыт и ценности" },
+  { label: "МУЗЫКА", command: "/music", description: "Раздел II — Плейлист, музыкальное творчество и биты" },
+  { label: "ПЕКАРНЯ", command: "/bakery", description: "Раздел III — Ремесленный хлеб длительного брожения" },
+  { label: "ИГРА", command: "games", commandMapped: "/games", description: "Раздел IV — Интерактивная игра Змейка" },
+  { label: "ГАЛЕРЕЯ", command: "/lastphoto", description: "Раздел V — Фото дня и атмосфера момента" },
+  { label: "КОНТАКТЫ", command: "/contact", description: "Раздел VI — Способы связи и профили в соцсетях" },
+  { label: "РАСПИСАНИЕ", command: "/freetime", description: "Раздел VII — Календарь занятости и свободное время" },
 ];
 
 export default function CommandPalette() {
@@ -107,7 +107,7 @@ export default function CommandPalette() {
 
             {/* Bottom gallery metadata */}
             <p className="text-[10px] font-serif text-gold-300/30 uppercase tracking-[0.25em]">
-              Музей цифрового искусства Бекича • Все экспонаты интерактивны
+              Персональный сайт Атабека • Разделы интерактивны
             </p>
           </motion.div>
         ) : (
@@ -124,7 +124,7 @@ export default function CommandPalette() {
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold-500 animate-pulse" />
                 <span className="font-serif text-[10px] tracking-widest text-gold-500/70 uppercase">
-                  SALLE {activeCommand.toUpperCase()}
+                  РАЗДЕЛ {activeCommand.toUpperCase().replace("/", "")}
                 </span>
               </div>
               

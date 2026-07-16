@@ -70,15 +70,15 @@ export default function GamesContent() {
         <div className="mb-4 flex items-center justify-between">
           <div className="space-y-0.5">
             <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-gold-500/50">
-              Exhibit IV • Byzantine Arena
+              Раздел IV • Интерактив
             </p>
             <h3 className="font-serif text-sm font-bold tracking-wider text-gold-400">
-              НИТЬ АРИАДНЫ
+              ИГРА ЗМЕЙКА
             </h3>
           </div>
           <div className="text-right">
             <p className="text-[9px] font-mono text-white/30 uppercase tracking-widest">
-              Собрано Рубинов
+              Собрано очков
             </p>
             <p className="font-serif text-base font-bold text-red-500 shadow-sm">
               ◆ {score}
@@ -107,7 +107,7 @@ export default function GamesContent() {
               >
                 <div className="space-y-5 px-6 text-center">
                   <p className="font-serif text-lg leading-relaxed text-gold-400 font-bold">
-                    Нить оборвалась.
+                    Игра окончена
                     <br />
                     <span className="text-xs font-serif italic text-white/60 font-normal">
                       Попробуйте снова
@@ -121,7 +121,7 @@ export default function GamesContent() {
                     onClick={handleRestart}
                     className="rounded-sm border border-gold-500/30 bg-gold-500/10 px-5 py-2 text-xs font-serif text-gold-300 tracking-widest uppercase transition-all duration-300 hover:border-gold-500 hover:bg-gold-500/20"
                   >
-                    Переродиться
+                    Начать заново
                   </button>
                 </div>
               </motion.div>
@@ -184,7 +184,7 @@ export default function GamesContent() {
 
         {/* Controls label */}
         <p className="mt-4 text-center font-serif text-[10px] text-gold-300/30 uppercase tracking-[0.2em]">
-          ▲ ▼ ◀ ▶ — навигация нити Ариадны
+          ▲ ▼ ◀ ▶ — управление змейкой
         </p>
       </div>
     </CommandPanel>

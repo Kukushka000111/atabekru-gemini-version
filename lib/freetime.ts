@@ -14,28 +14,28 @@ export const WEEK_SCHEDULE: DaySchedule[] = [
     shortName: "Пн",
     name: "Понедельник",
     status: "busy",
-    message: "В глубоком тильте и коде",
+    message: "Погружен в разработку и написание кода",
   },
   {
     id: "tue",
     shortName: "Вт",
     name: "Вторник",
     status: "busy",
-    message: "В глубоком тильте и коде",
+    message: "Погружен в разработку и написание кода",
   },
   {
     id: "wed",
     shortName: "Ср",
     name: "Среда",
     status: "busy",
-    message: "В глубоком тильте и коде",
+    message: "Погружен в разработку и написание кода",
   },
   {
     id: "thu",
     shortName: "Чт",
     name: "Четверг",
     status: "busy",
-    message: "В глубоком тильте и коде",
+    message: "Погружен в разработку и написание кода",
   },
   {
     id: "fri",
@@ -43,7 +43,7 @@ export const WEEK_SCHEDULE: DaySchedule[] = [
     name: "Пятница",
     status: "free",
     message:
-      "Свободен после 18:00. Открыт к обсуждению музыки, багетов и IT-проектов",
+      "Свободен после 18:00. Открыт к обсуждению музыки, выпечки и IT-проектов",
   },
   {
     id: "sat",
@@ -51,7 +51,7 @@ export const WEEK_SCHEDULE: DaySchedule[] = [
     name: "Суббота",
     status: "gaming",
     message:
-      "Занят глобальным доминированием в Hearts of Iron IV и Crusader Kings 3",
+      "Отдыхаю и играю в стратегии (Hearts of Iron IV или Crusader Kings 3)",
   },
   {
     id: "sun",
@@ -59,7 +59,7 @@ export const WEEK_SCHEDULE: DaySchedule[] = [
     name: "Воскресенье",
     status: "gaming",
     message:
-      "Занят глобальным доминированием в Hearts of Iron IV и Crusader Kings 3",
+      "Отдыхаю и играю в стратегии (Hearts of Iron IV или Crusader Kings 3)",
   },
 ];
 

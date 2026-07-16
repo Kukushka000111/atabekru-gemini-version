@@ -59,7 +59,7 @@ export default function CustomCursor() {
           opacity: isHovering ? 0.5 : 0.85,
         }}
         transition={{ type: "spring", stiffness: 400, damping: 25 }}
-        className="rounded-full bg-teal-300/90 blur-[1px] shadow-[0_0_12px_rgba(94,234,212,0.6)]"
+        className="rounded-full bg-gold-400/90 blur-[1px] shadow-[0_0_12px_rgba(212,175,55,0.6)]"
       />
     </motion.div>
   );

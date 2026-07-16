@@ -37,10 +37,10 @@ export default function BakeryContent() {
           {/* Header */}
           <div className="space-y-1">
             <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-gold-500/50">
-              Exhibit III • Divine Bakers Guild
+              Раздел III • Выпечка и хлеб
             </p>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-gold-400">
-              ГИЛЬДИЯ ХЛЕБА
+              РЕМЕСЛЕННЫЙ ХЛЕБ
             </h2>
             <div className="mx-auto h-[1px] w-20 bg-gradient-to-r from-transparent via-gold-500/35 to-transparent" />
           </div>
@@ -48,10 +48,10 @@ export default function BakeryContent() {
           {/* Golden Illuminated Quote (Chiaroscuro ambiance) */}
           <div className="max-w-md mx-auto space-y-4">
             <p className="font-serif italic text-white/90 text-sm leading-relaxed">
-              «В глубоких тенях печи рождается истинное золото жизни — хрустящий багет, овеянный теплом вечного пламени».
+              «Выпечка хлеба — это искусство баланса времени, температуры и качественных ингредиентов. Свежий, хрустящий багет делает каждый день лучше».
             </p>
             <p className="font-serif text-xs text-gold-300/40 tracking-wide">
-              Каноническая выпечка по секретным пергаментам Артемия Лебедева.
+              Классическая ремесленная выпечка на натуральной закваске.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function BakeryContent() {
                   <GildedWheatIcon />
                 </span>
                 <span className="font-serif font-bold tracking-[0.15em] text-gold-100">
-                  Заказать углеводы
+                  Узнать секреты выпечки
                 </span>
               </div>
             </a>
