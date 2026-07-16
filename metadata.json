@@ -1,0 +1,5 @@
+{
+  "name": "atabek.ru",
+  "description": "Персональный сайт-портфолио — Command Palette интерфейс",
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
